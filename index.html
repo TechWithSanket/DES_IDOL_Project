@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e1e5ea;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        h2 {
+            color: #34495e;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-align: left;
+        }
+        textarea {
+            width: calc(100% - 22px);
+            height: 120px;
+            padding: 12px;
+            border: 1px solid #bdc3c7;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            resize: vertical;
+            font-size: 1em;
+            color: #2c3e50;
+            background: #fafafa;
+            transition: background 0.3s, border-color 0.3s;
+        }
+        textarea:focus {
+            background: #e1f5fe;
+            border-color: #0072ff;
+        }
+        button {
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-size: 1em;
+            font-weight: 600;
+        }
+        button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #ecf0f1;
+            border-top: 1px solid #bdc3c7;
+            text-align: center;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .footer p {
+            margin: 10px 0;
+            color: #7f8c8d;
+        }
+        .footer p strong {
+            color: #2c3e50;
+        }
+        .error-message {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            textarea {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+    <script>
+        function copyToClipboard() {
+            var copyText = document.getElementById("outputText");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand("copy");
+            alert("Copied the text: " + copyText.value);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Text Encryption Using DES</h1>
+        <form action="/encrypt" method="post">
+            <h2>Input Text for Encryption:</h2>
+            <textarea name="inputText" placeholder="Please type your plain text" th:text="${inputText}" maxlength="500"></textarea>
+            <button type="submit">Encrypt</button>
+        </form>
+        <form action="/decrypt" method="post">
+            <h2>Output Text for Decryption:</h2>
+            <textarea id="outputText" name="outputText" th:text="${outputText}"></textarea>
+            <button type="submit">Decrypt</button>
+            <button type="button" onclick="copyToClipboard()">Copy</button>
+        </form>
+        <p>Remaining characters: <span th:text="${charCount}"></span></p>
+        <p th:if="${error}" th:text="${error}" class="error-message"></p>
+    </div>
+    <div class="footer">
+        <p><strong>Author:</strong> Sanket Gajanan Kasar</p>
+        <p><strong>Department:</strong> MSc Computer Science Sem IV</p>
+        <p><strong>Year:</strong> 2024 SEM IV</p>
+        <p><strong>Institution Name:</strong> Institute of Distance and Open Learning (IDOL)</p>
+        <p><strong>Project Description:</strong> A web application for securely encrypting and decrypting text using the DES algorithm.</p>
+        <p><strong>Technologies Used:</strong> Java, Apache Tomcat, Spring Boot, HTML</p>
+        <p><strong>Date of Submission:</strong> 1st August 2024</p>
+    </div>
+</body>
+</html>
