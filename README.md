@@ -1,7 +1,13 @@
-# DES_IDOL_Project
+**DES_IDOL_Project**
 This is the final year IDOL project
+We are using below technology for build this project 
+- Backend Language: java
+- Frontend Language: HTML
+- Application IDE: spring boot
+- Web Server: Apache tomact
 
-Seteps 
+**Seteps: **
+
 1. Go to spingboot application & create spring starter project 
 ![image](https://github.com/user-attachments/assets/0015cb00-d7e7-42d3-8261-969dbff91b5e)
 
