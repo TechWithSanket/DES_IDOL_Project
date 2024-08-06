@@ -16,9 +16,12 @@ DES (Data encryption standard) Therory overview
    II. Triple DES
 
 8. Double DES use 2 key for encyption and decryption the data 
-   first key for encypt the data and second key use for decypt the data.
+
+   First key for encypt the data and second key use for decypt the data.
+
 9. Triple DES use 3 key for encyption and decryption the data
-   first key use for encypt the data, second key use for decrypt the data, third key use for again encypt the data. 
+
+   First key use for encypt the data, second key use for decrypt the data, third key use for again encypt the data. 
    
 
 We are using below technology for build this project 
