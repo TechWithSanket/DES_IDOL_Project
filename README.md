@@ -1,6 +1,23 @@
 **DES_IDOL_Project**
 
 This is the final year IDOL project
+
+DES (Data encryption standard) Therory overview 
+1. DES use for data encryption and decryption purpose.
+2. DES developed by IBM in 1970
+3. DES take 64 bit plain text and convert into 64 bit encyption text is called as chipertext.
+4. DES use single key for both encyption and decryption process of data.
+5. split the right text and left text, 16 round process perform & show the output.
+6. After 16 round process joined together and produced the 64 bit chiper text.
+7. There are 2 types of DES
+   I. Double DES
+   II. Triple DES
+8. Double DES use 2 key for encyption and decryption the data 
+   first key for encypt the data and second key use for decypt the data.
+9. Triple DES use 3 key for encyption and decryption the data
+   first key use for encypt the data, second key use for decrypt the data, third key use for again encypt the data. 
+   
+
 We are using below technology for build this project 
 - Backend Language: java
 - Frontend Language: HTML
