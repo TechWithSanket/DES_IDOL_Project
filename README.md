@@ -2,7 +2,7 @@
 
 This is the final year IDOL project
 
-DES (Data encryption standard) Therory overview 
+**DES (Data encryption standard)** Therory overview 
 1. DES use for data encryption and decryption purpose.
 2. DES developed by IBM in 1970
 3. DES take 64 bit plain text and convert into 64 bit encyption text is called as chipertext.
