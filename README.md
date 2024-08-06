@@ -12,6 +12,7 @@ DES (Data encryption standard) Therory overview
 7. There are 2 types of DES
 
    I. Double DES
+
    II. Triple DES
 
 8. Double DES use 2 key for encyption and decryption the data 
