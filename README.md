@@ -10,8 +10,10 @@ DES (Data encryption standard) Therory overview
 5. split the right text and left text, 16 round process perform & show the output.
 6. After 16 round process joined together and produced the 64 bit chiper text.
 7. There are 2 types of DES
+
    I. Double DES
    II. Triple DES
+
 8. Double DES use 2 key for encyption and decryption the data 
    first key for encypt the data and second key use for decypt the data.
 9. Triple DES use 3 key for encyption and decryption the data
