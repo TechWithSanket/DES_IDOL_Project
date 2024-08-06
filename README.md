@@ -9,16 +9,17 @@ Seteps
 
 2. In this project there are 3 class .java file and 1 htm file index.html 
 
-DESEncryption.java
-EncryptionApplication.java
-EncryptionController.java
-index.html
+- DESEncryption.java   
+- EncryptionApplication.java
+- EncryptionController.java
+- index.html
 
 3. index.html file deploy on under templete 
 
 4. below is the file system strcuture for your refrence
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/69e0a889-b89e-4799-9bf4-1207f730b92b)
+
 
 
 
