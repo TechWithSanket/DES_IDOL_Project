@@ -24,7 +24,7 @@ Seteps
    Right click on 'EncryptionApplication.java' file 
    Run as > spring boot application 
 
-5. Open your chrome browser and hit > http://localhost:8080/  OR http://<Your system private IP address>:8080
+5. Open your chrome browser and hit > http://localhost:8080/
 
 6. Output :
 ![image](https://github.com/user-attachments/assets/591a53fb-ffec-48a2-9c3e-4a8571c26eec)
